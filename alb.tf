@@ -2,7 +2,7 @@
 
 resource "aws_alb" "alb-ecs" {
   name            = "myapp-load-balancer"
-  subnets         = [aws_subnet.public_1.id, aws_subnet.public_2.id] 
+  subnets         = [aws_subnet.public_1.id, aws_subnet.public_2.id]
   security_groups = [aws_security_group.lb.id]
 }
 
